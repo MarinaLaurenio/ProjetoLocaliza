@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="estilo.css">
+
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="imagens/logoLocaliza.png">
+    <title> Localiza | Aluguel de carros</title>
+
+</head>
+
+<body id="myBody">
+    <header id="topo">
+        <nav class="nav-header">
+
+            <img class="img-logo" src="imagens/Imagem1.svg" alt="logo">
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#my-footer">About</a></li>
+                <li><a href="https://www.linkedin.com/in/marina-laur%C3%AAnio-926435142/">Contact</a></li>
+                <li>
+                    <a href="#" id="btn-login">Login</a>
+                    <div id="my-modal-login" class="main-modal-login">
+                        <div class="login-modal-object">
+                            <span id="close-login" class="close">&times;</span>
+                            <div class="form-style">
+                                <form method="post" action="">     
+                                    <select id="select"class="selection-user">
+                                        <option value="0">Selecione</option>
+                                        <option value="1">Cliente</option>
+                                        <option value="2">Funcionário</option>
+                                    </select>
+                                    <div class="form-label">
+                                        <label for="nome">Nome:</label>
+                                        <input type="text" id="nome" required>
+                                    </div>
+                                    <div class="form-label">
+                                        <label for="nome">CPF:</label>
+                                        <input type="number" id="CPF" required>
+                                    </div>
+                                    <div>
+                                        <input class="form-submit" type="submit" value="Login">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <button id="toggle-button">&#9776;</button>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="cover-page">
+            <div class="text-cover-page">
+                <h1>CAR RENTAL</h1>
+                <h2>Faça sua reserva!</h2>
+                <a href="#utilitary-cars" class=" btn-cover-page btn">Clique aqui!</a>
+            </div>
+            <div class="img-car-cover-page">
+                <img src="imagens/pngwing.com.png" class="img-responsive img-car-cover-page ">
+            </div>
+
+        </div>
+
+        <section id="utilitary-cars">
+            <div class="div-cars">
+                <div class="title-div">
+                    <h2>Escolha o carro aqui!</h2>
+                </div>
+                <div class="subtitle-div">
+                    <h3>Carros Utiliários</h3>
+                </div>
+
+                <div class="div-article">                    
+                    <article class="article-cars">
+                        <div class="article-title">
+                            <h3>VW Gol 1.0</h3>
+                        </div>
+                        <div class="article-img">
+                            <img src="imagens/VW GOL 1.0.jpg">
+                        </div>
+                        <div class="article-text">                            
+                            <ul class="ul-content">
+                                <li class="group-cars-content">Air bag</li>
+                                <li class="group-cars-content">1 mala(s) pequena(s)</li>
+                                <li class="group-cars-content">Trava elétrica</li>
+                                <li class="group-cars-content">Vidro elétrico</li>
+                                <li class="group-cars-content">Ar-condicionado</li>
+                                <li class="group-cars-content">ABS</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <button id="btn1-article" class="btn-article"> Reserve</button>
+                        </div>
+                    </article>
+
+                    <article class="article-cars">
+                        <div class="article-title">
+                            <h3> Renault Kwid 1.0 </h3>
+                        </div>
+                        <div class="article-img">
+                            <img src="imagens/KWID.jpg">
+                        </div>
+                        <div class="article-text">                            
+                            <ul class="ul-content">
+                                <li class="group-cars-content">Air bag</li>
+                                <li class="group-cars-content">1 mala(s) pequena(s)</li>
+                                <li class="group-cars-content">Trava elétrica</li>
+                                <li class="group-cars-content">Vidro elétrico</li>
+                                <li class="group-cars-content">Ar-condicionado</li>
+                                <li class="group-cars-content">ABS</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <button id="btn2-article" class="btn-article"> Reserve</button>
+                        </div>
+                    </article>
+
+                    <article class="article-cars">
+                        <div class="article-title">
+                            <h3> Renault Sandero </h3>
+                        </div>
+                        <div class="article-img">
+                            <img src="imagens/sandero.jpg">
+                        </div>
+                        <div class="article-text">                            
+                            <ul class="ul-content">
+                                <li class="group-cars-content">Air bag</li>
+                                <li class="group-cars-content">1 mala(s) pequena(s)</li>
+                                <li class="group-cars-content">Trava elétrica</li>
+                                <li class="group-cars-content">Vidro elétrico</li>
+                                <li class="group-cars-content">Ar-condicionado</li>
+                                <li class="group-cars-content">ABS</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <button id="btn3-article" class="btn-article">Reserve</button>
+                        </div>
+                    </article>
+
+                    <article class="article-cars">
+                        <div class="article-title">
+                            <h3> GM Onix Joy 1.0 </h3>
+                        </div>
+                        <div class="article-img">
+                            <img src="imagens/onix.avif">
+                        </div>
+                        <div class="article-text">                            
+                            <ul class="ul-content">
+                                <li class="group-cars-content">Air bag</li>
+                                <li class="group-cars-content">1 mala(s) pequena(s)</li>
+                                <li class="group-cars-content">Trava elétrica</li>
+                                <li class="group-cars-content">Vidro elétrico</li>
+                                <li class="group-cars-content">Ar-condicionado</li>
+                                <li class="group-cars-content">ABS</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <button id="btn4-article" class="btn-article">Reserve</button>
+                        </div>
+                    </article>                 
+                </div>
+            </div>
+
+        </section>
+
+        <section id="sports-cars">
+            <div class="div-cars">             
+                <div class="subtitle-div-sports">
+                    <h3>Carros Esportivos</h3>
+                </div>
+
+                <div class="div-article">                    
+                    <article class="article-cars">
+                        <div class="article-title">
+                            <h3>BMW M5</h3>
+                        </div>
+                        <div class="article-img">
+                            <img src="imagens/D_NQ_NP_973079-MLB53806441620_022023-O.jpg">
+                        </div>
+                        <div class="article-text">                            
+                            <ul class="ul-content">
+                                <li class="group-cars-content">Air bag</li>
+                                <li class="group-cars-content">1 mala(s) pequena(s)</li>
+                                <li class="group-cars-content">Trava elétrica</li>
+                                <li class="group-cars-content">Vidro elétrico</li>
+                                <li class="group-cars-content">Ar-condicionado</li>
+                                <li class="group-cars-content">ABS</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <button id="btn5-article" class="btn-article"> Reserve</button>
+                        </div>
+                    </article>
+
+                    <article class="article-cars">
+                        <div class="article-title">
+                            <h3>Jaguar F-Type</h3>
+                        </div>
+                        <div class="article-img">
+                            <img src="imagens/jaguar.jpg">
+                        </div>
+                        <div class="article-text">                            
+                            <ul class="ul-content">
+                                <li class="group-cars-content">Air bag</li>
+                                <li class="group-cars-content">1 mala(s) pequena(s)</li>
+                                <li class="group-cars-content">Trava elétrica</li>
+                                <li class="group-cars-content">Vidro elétrico</li>
+                                <li class="group-cars-content">Ar-condicionado</li>
+                                <li class="group-cars-content">ABS</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <button id="btn6-article" class="btn-article"> Reserve</button>
+                        </div>
+                    </article>
+
+                    <article class="article-cars">
+                        <div class="article-title">
+                            <h3>BMW Z4 sDrive</h3>
+                        </div>
+                        <div class="article-img">
+                            <img src="imagens/bmw-z4.png">
+                        </div>
+                        <div class="article-text">                            
+                            <ul class="ul-content">
+                                <li class="group-cars-content">Air bag</li>
+                                <li class="group-cars-content">1 mala(s) pequena(s)</li>
+                                <li class="group-cars-content">Trava elétrica</li>
+                                <li class="group-cars-content">Vidro elétrico</li>
+                                <li class="group-cars-content">Ar-condicionado</li>
+                                <li class="group-cars-content">ABS</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <button id="btn7-article" class="btn-article">Reserve</button>
+                        </div>
+                    </article>
+
+                    <article class="article-cars">
+                        <div class="article-title">
+                            <h3>Mercedes-Benz C 300</h3>
+                        </div>
+                        <div class="article-img">
+                            <img src="imagens/20-201133_laminated-poster-of-cool-cars-wallpaper-mercedes-benz.png">
+                        </div>
+                        <div class="article-text">                            
+                            <ul class="ul-content">
+                                <li class="group-cars-content">Air bag</li>
+                                <li class="group-cars-content">1 mala(s) pequena(s)</li>
+                                <li class="group-cars-content">Trava elétrica</li>
+                                <li class="group-cars-content">Vidro elétrico</li>
+                                <li class="group-cars-content">Ar-condicionado</li>
+                                <li class="group-cars-content">ABS</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <button id="btn8-article" class="btn-article">Reserve</button>
+                        </div>
+                    </article>
+                    <!--Modal-->
+                    <div id="my-modal-register" class="main-modal">
+                        <div class="modal-object">
+                            <span id="close-register" class="close">&times;</span>
+                            <div class="form-style">
+                                <h3>Faça seu cadastro</h3>
+                                <form method="post" action="">
+                                    <div class="form-label">
+                                        <label for="nome">Nome:</label>
+                                        <input type="text" id="nome" required>
+                                    </div>
+                                    <div class="form-label">
+                                        <label for="CPF">CPF:</label>
+                                        <input type="text" id="CPF" required>
+                                    </div>
+                                    <div class="form-label">
+                                        <label for="idade">Idade:</label>
+                                        <input type="number" id="idade" required>
+                                    </div>
+                                    <div class="form-label">
+                                        <label for="DataNascimento">Data Nascimento:</label>
+                                        <input type="date" id="DataNascimento" required>
+                                    </div>
+                                    <div class="form-label">
+                                        <label for="Ncarteira">Nº Carteira Motorista:</label>
+                                        <input type="text" id="Ncarteira" required>
+                                    </div>
+                                    <div class="form-label">
+                                        <label for="endereço">Endereço:</label>
+                                        <input type="text" id="endereço" required>
+                                    </div>
+                                    <div class="form-label">
+                                        <label for="telefone">Telefone:</label>
+                                        <input type="number" id="endereço" required>
+                                    </div>
+                                    <div class="form-label">
+                                        <label for="email">Email:</label>
+                                        <input type="text" id="email" required>
+                                    </div>
+                                </form>
+                                <div>
+                                    <input id="btn-register" class="form-submit" type="submit" value="Cadastrar">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fim Modal-->
+                </div>
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+    <footer id="my-footer">
+        <span>Site criado como exercício do curso Fundamentos da Programação - Awari</span>
+        <a href="https://github.com/MarinaLaurenio">By Marina Laurênio - clique aqui -</a>
+        <span>Abril 2023</span>
+
+        <div data-scroll="smooth" data-anima="scroll">
+            <a href="#topo">
+                <div class="topo"></div>
+            </a>
+        </div>
+    </footer>
+
+    <script src="jsIndex.js"></script>
+</body>
+
+</html>

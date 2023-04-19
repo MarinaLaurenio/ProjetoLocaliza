@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="estiloPaginaCadastro.css">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="imagens/logoLocaliza.png">
+    <title> Localiza | Cadastro </title>
+
+</head>
+
+<body id="myBodyReserve">
+    <header id="topo">
+        <nav class="nav-header">
+
+            <img class="img-logo" src="imagens/Imagem1.svg" alt="logo">
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#my-footer">About</a></li>
+                <li><a href="https://www.linkedin.com/in/marina-laur%C3%AAnio-926435142/">Contact</a></li>
+            </ul>
+            <button id="toggle-button">&#9776;</button>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="section-register">
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="active"><a href="#carros" role="tab" data-toggle="tab">Cadastro Carros</a></li>
+                <li><a href="#funcionarios" role="tab" data-toggle="tab">Cadastro funcionários</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane active div-register" role="tabpanel" id="carros">
+                    <div class="text-area">
+                        <h1>Cadastro de carros</h1>
+                    </div>
+
+                    <div class="text-area">
+                        <form>
+                            <div class="form-label">
+                                <label for="placa">Placa:</label>
+                                <input type="text" id="placa">
+                            </div>
+                            <div class="form-label">
+                                <label for="ano">Ano:</label>
+                                <input type="text" id="ano">
+                            </div>
+                            <div class="form-label">
+                                <label for="cor">Cor:</label>
+                                <input type="text" id="cor">
+                            </div>
+                            <div class="form-label">
+                                <label for="modelo">Modelo:</label>
+                                <input type="text" id="modelo">
+                            </div>
+
+                            <div class="form-label">
+                                <label for="valor">Valor Diário:</label>
+                                <input type="text" id="valor">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="text-area">
+                        <button class="btn-register">Cadastrar</button>
+                    </div>
+                </div>
+
+                <div class="tab-pane" role="tabpanel" id="funcionarios">
+                    <div class="text-area">
+                        <h1>Cadastro Funcionários</h1>
+                    </div>
+                    <div class="text-area">
+                        <form>
+                            <div class="form-label">
+                                <label for="nome">Nome:</label>
+                                <input type="text" id="nome">
+                            </div>
+                            <div class="form-label">
+                                <label for="cpf">CPF:</label>
+                                <input type="text" id="cpf">
+                            </div>
+                            <div class="form-label">
+                                <label for="idade">Idade:</label>
+                                <input type="text" id="idade">
+                            </div>
+                            <div class="form-label">
+                                <label for="endereco">Endereco:</label>
+                                <input type="text" id="endereco">
+                            </div>
+
+                            <div class="form-label">
+                                <label for="dataContrato">Data Contrato:</label>
+                                <input type="text" id="dataContrato">
+                            </div>
+                            <div class="form-label">
+                                <label for="salario">Salario:</label>
+                                <input type="text" id="salario">
+                            </div>
+                            <div class="form-label">
+                                <label for="qntAluguel">Alugueis já realizados:</label>
+                                <input type="text" id="qntAluguel">
+                            </div>
+                            <div class="form-label">
+                                <label for="stattus">Status:</label>
+                                <input type="text" id="stattus">
+                            </div>
+                            <div class="form-label">
+                                <label for="telefone">Telefone:</label>
+                                <input type="text" id="telefone">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="text-area">
+                        <button class="btn-register">Cadastrar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+html,
+#myBodyReserve,
+.cover-page {
+    font-family: 'Lato', sans-serif;
+}
+
+#myBodyReserve {
+    background-color: var(--white-color);
+}
+
+/* Define a cor de fundo da barra de rolagem */
+body::-webkit-scrollbar {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 9px;
+}
+
+/* Define a cor da barra de rolagem */
+body::-webkit-scrollbar-thumb {
+    background-color: #FCCE06;
+    border-radius: 6px;
+}
+
+/* Define a cor do "thumb" (o botão da barra de rolagem) quando o mouse estiver sobre ele */
+body::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(66, 112, 56, 0.8);
+}
+
+:root {
+    --dark-green-color: rgb(66, 112, 56);
+    --white-color: rgb(245, 245, 245);
+    --white-color-transp: rgba(255, 255, 255, 0.8);
+    --yellow-color: #FCCE06;
+    --green-medium-color: rgb(154, 205, 50);
+
+}
+
+
+/*--Header-----------------------------------------------------------------------------------*/
+header {
+    height: 60px;
+    z-index: 2;
+}
+
+header::after {
+    content: '';
+    display: block;
+    height: 0.5px;
+    width: 100%;
+    background-color: var(--dark-green-color);
+}
+
+.nav-header {
+    height: 60px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--white-color-transp);
+    align-items: center;
+}
+
+.img-logo {
+    margin-left: 15px;
+    height: 2.5rem;
+}
+
+.nav-links {
+    display: flex;
+    margin: 0;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.nav-links li {
+    list-style-type: none;
+    font-weight: 400;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: var(--dark-green-color);
+    display: flex;
+}
+
+.nav-links li a:hover {
+    color: var(--green-medium-color);
+}
+
+
+#toggle-button {
+    display: none;
+    background-color: transparent;
+    color: var(--white-color);
+    border: none;
+    font-size: 20px;
+}
+
+/*--Main-----------------------------------------------------------------------------------*/
+.section-register {
+    margin-top: 25px;
+    padding: 0 15px;
+}
+.div-register{
+    margin: 10px 20px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.form-label {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-area:last-child {
+    margin-top: 8px;
+}
+
+li a {
+    color: var(--dark-green-color)
+}
+
+.nav-tabs>li.active>a {
+    background-color: var(--green-medium-color) !important;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid var(--green-medium-color) !important;
+}
+
+.text-area h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.form-label input {
+    height: 35px;
+    border: 0.2px solid transparent;
+    border-radius: 0.5rem;
+    box-shadow: 3px 3px 8px 0px var(--dark-green-color);
+}
+
+.text-area button {
+    padding: 5px;
+    border-radius: 0.5rem;
+    border: 1px solid transparent;
+    background-color:var(--green-medium-color);
+    color:var(--dark-green-color);
+}

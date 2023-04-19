@@ -1,0 +1,626 @@
+html,
+#myBody,
+.cover-page {
+    font-family: 'Lato', sans-serif;
+}
+
+#myBody {
+    background-color: rgb(66, 112, 56);
+}
+
+/* Define a cor de fundo da barra de rolagem */
+body::-webkit-scrollbar {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 9px;
+}
+
+/* Define a cor da barra de rolagem */
+body::-webkit-scrollbar-thumb {
+    background-color: #FCCE06;
+    border-radius: 6px;
+}
+
+/* Define a cor do "thumb" (o botão da barra de rolagem) quando o mouse estiver sobre ele */
+body::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(66, 112, 56, 0.8);
+}
+
+:root{
+    --dark-green-color:rgb(66, 112, 56);
+    --white-color: rgb(245,245,245);
+    --white-color-transp:rgba(255, 255, 255, 0.8);
+    --yellow-color:#FCCE06;
+    --green-medium-color: rgb(154, 205, 50); 
+
+}
+
+/*--Header-----------------------------------------------------------------------------------*/
+header {
+    height: 60px;
+    z-index: 2;
+}
+
+.nav-header {
+    height: 60px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--white-color-transp);
+    align-items: center;
+}
+
+.img-logo {
+    margin-left: 15px;
+    height: 2.5rem;
+
+}
+
+.nav-links {
+    display: flex;
+    margin: 0;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.nav-links li {
+    list-style-type: none;
+    font-weight: 400;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: var(--dark-green-color);
+    display: flex;
+
+}
+
+.nav-links li a:hover {
+    color:var(--green-medium-color);
+}
+
+.nav-links li:last-child a:hover {
+    background-color: var(--green-medium-color);
+    color: var(--white-color);
+    border-radius: 1rem;
+}
+
+#toggle-button {
+    display: none;
+    background-color: transparent;
+    color:var(--white-color);
+    border: none;
+    font-size: 20px;
+}
+
+
+.login-form {
+    display: none;
+    position: absolute;
+    /*posiciona o formulário sobre a navbar*/
+    top: 70px;
+    /*distância do topo da navbar*/
+    right: 20px;
+    border: 1px solid transparent;
+    background-color: var(--white-color-transp);
+    padding: 10px;
+    border-radius: 0.5rem;
+}
+
+/*--Login-----------------------------------------------------------------------------------*/
+
+.main-modal-login {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 3;
+}
+
+.login-modal-object {
+    background-color: var(--white-color);
+    margin: 3% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 25%;
+}
+
+/*--Main-----------------------------------------------------------------------------------*/
+.cover-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 65px;
+    background-color: var(--white-color-transp);
+    height: 480px;
+}
+
+.text-cover-page {
+    text-align: right;
+    color: var(--dark-green-color);
+    padding-left: 10px;
+    width: 499.6px;
+}
+
+.text-cover-page h1,
+h2 {
+    font-family: 'Kanit', sans-serif;
+    text-transform: uppercase;
+}
+
+.text-cover-page h1 {
+    font-size: 108px;
+    text-align: right;
+    position: relative;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.text-cover-page h2 {
+    position: relative;
+    text-align: right;
+    right: 145px;
+    font-size: 27px;
+    margin: 0;
+}
+
+.img-car-cover-page {
+    width: 499.6px;
+    height: auto;
+    padding: 60px 0 60px 0;
+    position: relative;
+    z-index: 2;
+    right: 7px;
+}
+
+.btn-cover-page {
+    margin-top: 1rem;
+    position: relative;
+    right: 46px;
+    width: 35rem;
+    background-color:var(--yellow-color);
+    color: var(--dark-green-color);
+    text-transform: uppercase;
+}
+
+
+.btn-cover-page:hover {
+    background-color: var(--dark-green-color);
+    color: var(--yellow-color) !important;
+    transition: background-color 0.4s;
+}
+
+/*--Cars Carros-----------------------------------------------------------------------------------*/
+
+#utilitary-cars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4.5rem 0px;
+    width: 100%;
+}
+
+#sports-cars{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4.5rem 0px;
+    width: 100%; 
+    background-color: var(--white-color-transp);
+}
+
+.div-cars {
+    margin: 9px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-div h2 {
+    font-weight: 600;
+    font-size: 34px;
+    text-align: center;
+    color: var(--white-color);
+}
+
+.subtitle-div{
+    font-size: 28px;
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+.subtitle-div::after{
+    content: '';
+    display: block;
+    height: 0.5px;        
+    width: 100%;
+    background-color: var(--white-color-transp);
+}
+.subtitle-div-sports{
+    font-size: 28px;
+    color: var(--dark-green-color);
+    text-transform: uppercase;
+}
+.subtitle-div-sports::after{
+    content: '';
+    display: block;
+    height: 0.5px;        
+    width: 100%;
+    background-color: var(--dark-green-color);
+}
+
+.div-article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.9rem;
+    flex-wrap: wrap;
+}
+
+.article-cars {
+    margin: 0.90rem;
+    background-color: var(--yellow-color);
+    border-radius: 0.5rem;
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px;
+    width: 320px;
+    height: 490px;
+    display: flex;
+    flex-direction: column;
+}
+
+.article-title {
+    text-align: center;
+}
+
+.article-title h3 {
+    text-transform: uppercase;
+}
+
+.article-img {
+    border-radius: 1rem;
+    margin: 15px;
+    width: auto;
+    height: 234px;
+    overflow: hidden;
+}
+
+.article-img img {
+    width: 100%;
+    height: 100%;
+    object-position: center center;
+    object-fit: cover;
+}
+
+.article-text {
+    font-weight: bold;
+    position: relative;
+    width: auto;
+    margin: 15px;
+}
+.ul-content{
+    display: -ms-grid;
+    display: grid;
+    gap: 0.8rem;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+
+}
+.group-cars-content{
+    align-items: center;
+    background-color: var(--white-color-transp);
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0.8rem;
+    gap: 0.8rem;
+}
+
+.btn-article {
+    width: -webkit-fill-available;
+    margin: 15px;
+    padding: 5px;
+    border: 1px solid var(--dark-green-color);
+    border-radius: 1rem;
+    font-weight: bold;
+}
+
+.btn-article:hover {
+    animation: btn-article 0.5s;
+    -webkit-animation: btn-article 0.5s;
+    -moz-animation: btn-article 0.5s;
+    -o-animation: btn-article 0.5s;
+}
+
+@keyframes btn-article {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    25% {
+        transform: translate(-5px, 5px);
+    }
+
+    50% {
+        transform: translate(0px, 0px);
+    }
+
+    75% {
+        transform: translate(5px, -5px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+/*--Modal-----------------------------------------------------------------------------------*/
+
+.main-modal {
+    display: none;
+    position: fixed;
+    z-index: 4;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-object {
+    background-color: var(--white-color);
+    margin: 3% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.selection-user{
+    width: -webkit-fill-available;
+    padding: 5px;
+    border: 1px solid  var(--dark-green-color);
+    box-shadow: 3px 3px 8px 0px var(--dark-green-color);
+    border-radius: 0.5rem;
+    margin: 20px 0 10px;
+    
+}
+
+.form-style {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-style h3 {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.form-label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.form-label label {
+    font-weight: bold;
+}
+
+.form-label input,
+.form-label textarea {
+    padding: 5px;
+    border: 0.5px solid var(--dark-green-color);
+    border-radius: 0.5rem;
+    font-size: 16px;
+    box-shadow: 3px 3px 8px 0px var(--dark-green-color);
+}
+
+label::after {
+    content: "*";
+    color: red;
+    margin-left: 5px;
+}
+
+.form-submit {
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    border: 1px solid transparent;
+    background-color:var(--yellow-color);
+    color:var(--dark-green-color);
+}
+.form-submit:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*--Footer-----------------------------------------------------------------------------------*/
+
+#my-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 153px;
+    width: 100%;
+    background-color: rgb(69, 69, 69);
+}
+#my-footer span {
+    color: var(--dark-green-color);
+}
+
+#my-footer a {
+    color: var(--yellow-color);
+    font-weight: bold;
+}
+
+#my-footer a:hover {
+    color:var(--dark-green-color);
+    text-decoration: underline;
+}
+
+.topo {
+    position: fixed;
+    bottom: 20px;
+    right: -500px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: url(imagens/seta.jpg) no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-color: white;
+    transition: .4s all;
+
+}
+
+.show-button .topo {
+    right: 7px;
+    transition: .4s all;
+}
+
+/*--Media screen-----------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 767px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 61px;
+        right: 0;
+        background-color:var(--white-color-transp);
+        padding: 15px 40px;
+        z-index: 3;
+        margin: 0;
+    }
+
+    .nav-links li::after {
+        content: '';
+        display: block;
+        height: 0.5px;        
+        width: 0;
+        transition: width 0.3s ease-in-out;
+        background-color: #888;
+
+    }
+    .nav-links li:hover::after {
+        width: 100%;        
+    }
+    .nav-links li:last-child::after{
+        content: none;
+    }
+
+    .nav-links.show-nav-links{
+        display: flex;
+    }
+
+    #toggle-button {
+        display: block;
+        padding-right: 15px;
+        color:  var(--dark-green-color);
+        font-size: 27px;
+    }
+
+    .login-modal-object {
+        width: 40%;
+    }
+
+    /*Fontes, tamanhos e posições*/
+    .text-cover-page {
+        padding-left: 40px;
+    }
+
+    .text-cover-page h1 {
+        font-size: 64px;
+        text-align: right;
+        left: -18px;
+    }
+    
+    .text-cover-page h2 {
+        position: relative;
+        text-align: right;
+        right: 94px;
+        font-size: 17px;
+        margin: 0;
+    }
+     
+    .btn-cover-page {
+        width: 17rem;
+        margin-left: 82px;
+    
+    }
+    
+    .title-div h2 {
+        font-size: 23px;
+    }
+
+    .article-title h3 {
+        font-size: 20px;
+    }
+
+    .div-article{
+        flex-direction: column;
+    }
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .text-cover-page h1 {
+        font-size: 87px;
+        text-align: right;
+        position: relative;
+        left: -3px;
+    }
+    
+    .text-cover-page h2 {
+        right: 116px;
+        font-size: 22px;
+    }
+    
+    .btn-cover-page {
+        margin-top: 1rem;
+        position: relative;
+        width: 21rem;
+        right: 116px;
+    
+    }
+    .img-car-cover-page {
+        padding: 60px 0 60px 7px;
+    }
+    .title-div h2 {
+        font-size: 28px;
+    }
+
+    .article-title h3 {
+        font-size: 21px;
+    }
+ 
+}
+
+
